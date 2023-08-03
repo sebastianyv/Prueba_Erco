@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erco Energía</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    
+    
+    <div class="encabezado">
+    <h1>Bienvenido(a) al centro de información de Erco Energía </h1>
+    </div>
+    
+    
+    <h1>Tabla de consumos</h1>
+    <br>
+    <form onsubmit="agregarGeneracion(event)">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="generacionActual">Generación actual:</label>
+        <input type="number" id="generacionActual" required>
+        <label for="generacionTotal">Generación total:</label>
+        <input type="number" id="generacionTotal" required>
+        <label for="potencia">Potencia:</label>
+        <input type="number" id="potencia" required>
+        <button type="submit">Agregar</button>
+    </form>
+     
+    <br>
+    <div class="tabla-container">
+    <table id="generacionesTabla">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Generación Actual</th>
+                <th>Generación Total</th>
+                <th>Potencia</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    </div>
+
+
+</body>
+</html>

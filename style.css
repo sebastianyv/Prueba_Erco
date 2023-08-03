@@ -1,0 +1,46 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.encabezado {
+    color: rgba(88, 225, 106, 0.979);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    position: relative; 
+}
+
+.tabla-container {
+    overflow-x: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+#generacionesTabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#generacionesTabla th,
+#generacionesTabla td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#generacionesTabla th {
+    background-color: #f2f2f2;
+}
+
+#generacionesTabla td button {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#generacionesTabla td button:hover {
+    background-color: #cc0000;
+}
